@@ -1,0 +1,331 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    
+    .menu-item {
+    background-color: #f1d204; /* amarillo */
+    color: white;
+    font-weight: bold;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+    .menu-item:hover {
+    background-color: #ffd700; /* amarillo más brillante al pasar el mouse */
+    
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .upload-section {
+      border: 2px dashed #ccc;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .upload-section button {
+      background-color: #082a63de;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #154492;
+      color: white;
+    }
+    .captcha {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .submit-btn {
+      display: block;
+      margin: 20px auto;
+      background-color: #ccc;
+      color: #666;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: not-allowed;
+    }
+    /* Inputs */
+    input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+    /* Imagen */
+    .preview {
+    max-width: 300px;
+    display: none;
+    border: 2px solid #004aad;
+    border-radius: 5px;
+       /* convierte la imagen en bloque */
+    margin: 20px auto;    /* margen automático a izquierda/derecha */
+    }
+    /* Secciones */
+    .left-section, .right-section {
+    width: 48%;
+    min-width: 300px;
+    }
+    
+    /* Estados */
+    .ok {
+    color: green;
+    font-weight: bold;
+    }
+
+    .error {
+    color: red;
+    font-weight: bold;
+    }
+    .btn-secondary {
+    background-color: #ffcc00;
+    color: rgb(0, 0, 0);;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .btn-secondary:hover {
+    background-color: #e6b800;
+    }
+
+
+  /* Estilo general del encabezado */
+  header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.80857;
+  font-weight: normal;
+  }
+
+  header h1 {
+  color: #eed818;
+  font-size: 25px;
+  margin: 0;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  }
+
+/* Barra de navegación */
+  nav {
+  background-color: #078bcc;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 70px;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  width: 100%;
+  }
+
+  /* Elementos del menú */
+  nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; 
+  
+   
+  }
+
+/* Botón activo (INICIO) */
+nav a.active {
+  background-color: #eed818;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+/* Efecto hover */
+nav a:hover {
+  background-color: #078bcc;
+  
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    flex: 1 1 100%;
+    text-align: center;
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    margin: 10px;
+    padding: 10px;
+    max-width: none;
+  }
+  
+  .left-section, .right-section {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .upload-section {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .upload-section button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  table {
+    font-size: 14px;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+  
+  .preview {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  
+  input[type="text"], input[type="file"] {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .submit-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .captcha {
+    margin-top: 15px;
+  }
+  
+  header {
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    font-size: 20px;
+  }
+  
+  footer {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  .menu-item {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  
+  .upload-section button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  table {
+    font-size: 12px;
+  }
+  
+  th, td {
+    padding: 4px;
+  }
+  
+  input[type="text"], input[type="file"] {
+    padding: 6px;
+  }
+  
+  .submit-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  header h1 {
+    font-size: 18px;
+  }
+  
+  nav {
+    height: 50px;
+  }
+  
+  nav a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  footer {
+    font-size: 10px;
+  }
+}
+
+footer {
+  background-color: #001d26; /* azul oscuro */
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  footer {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+}
