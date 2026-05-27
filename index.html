@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidad de Registros Académicos</title>
+  <link rel="stylesheet" href="css/stilo.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header>
+    <h1>UNIDAD DE REGISTROS ACADÉMICOS</h1>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">INICIO</a>
+  </nav>
+
+  <div class="container">
+    
+    <h2>Ten en cuenta lo siguiente:</h2>
+    <p><strong>Características de tu foto:</strong> Imagen a color con fondo blanco. Tomada de frente sin gorra, gafas oscuras o lentes. La imagen debe enfocarse en el rostro del estudiante a partir de los hombros con ropa formal.
+    La imagen debe estar libre de sellos o enmendaduras. Solo se aceptan imágenes digitales no escaneadas. </p>
+    <p><strong>Formato:</strong> .jpg</p>
+    <h3>Parámetros que debe contener tu imagen:</h3>
+    <table>
+      <tr>
+        <th>N°</th>
+        <th>Nombre</th>
+        <th>Parámetro</th>
+        <th>Desde</th>
+        <th>Hasta</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Tamaño</td>
+        <td>50kb</td>
+        <td>4</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Dimensión alto</td>
+        <td>Pixeles</td>
+        <td>288</td>
+        <td>288</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Dimensión ancho</td>
+        <td>Pixeles</td>
+        <td>240</td>
+        <td>240</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Resolución</td>
+        <td>dpi</td>
+        <td>300</td>
+        <td>300</td>
+      </tr>
+    </table>
+    <h3>Ver si mi foto tiene los parámetros correctos</h3>
+    <p>Esta función solo valida las dimensiones de la imagen y que cuente con el formato de imagen .jpg, <strong>NO valida</strong> si cuentas con lentes o fondo blanco.</p>
+    <div class="upload-section">
+      <input type="file" id="fileInput" accept="image/*"><br><br>
+      <img id="preview" class="preview"><br><br>
+      <button id="analyzeBtn" class="btn-primary">Verificar foto</button>
+      <div id="info"></div>
+    </div>
+      <div>
+      <h3>Convierte tu foto de acuerdo a las dimensiones requeridas por SUNEDU</h3>
+      <label for="dni">Número de DNI:</label><br>
+      <input type="text" id="dni" maxlength="9" placeholder="Ingrese su número de DNI">
+      <button id="restructBtn" class="btn-secondary">Transformar foto</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+
+</body>
+
+ <footer>
+    © 2025 All Rights Reserved. Universidad Nacional del Callao
+  </footer>
+
+</html>
